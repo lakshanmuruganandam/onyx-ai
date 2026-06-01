@@ -4,8 +4,18 @@
   <p><strong>Architected by Lakshan Muruganandam</strong></p>
   <p>An elite, adaptive AI technical interviewer designed to evaluate FAANG-level engineering talent without bias, complete with enterprise-grade proctoring and career coaching.</p>
 
-  <h3>🌟 <a href="https://onyx-ai-seven.vercel.app" target="_blank"><strong>TRY THE LIVE DEMO HERE (Vercel)</strong></a> 🌟</h3>
+  <br/>
+  <h2>🚀 <a href="https://onyx-ai-seven.vercel.app" target="_blank"><strong>WE HAVE A FULLY WORKING LIVE DEMO! TRY IT HERE</strong></a> 🚀</h2>
+  <p><em>Experience the future of technical hiring right now in your browser.</em></p>
+  <br/>
 </div>
+
+<hr/>
+
+## 🎬 Full Demo Video
+*(Paste your YouTube, Loom, or raw video link right here!)*
+
+> **[Watch the full end-to-end demonstration of ONYX AI interviewing a candidate here!](#)**
 
 <hr/>
 
