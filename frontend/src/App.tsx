@@ -3,6 +3,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import Home from './pages/Home';
 import Interview from './pages/Interview';
 import Report from './pages/Report';
+import DemoLoader from './pages/DemoLoader';
 
 const PageTransition = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -26,6 +27,7 @@ const AnimatedRoutes = () => {
         <Route path="/" element={<PageTransition><Home /></PageTransition>} />
         <Route path="/interview" element={<PageTransition><Interview /></PageTransition>} />
         <Route path="/report" element={<PageTransition><Report /></PageTransition>} />
+        <Route path="/demo" element={<PageTransition><DemoLoader /></PageTransition>} />
       </Routes>
     </AnimatePresence>
   );
