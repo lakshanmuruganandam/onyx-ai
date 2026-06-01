@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ONYX - Autonomous AI Interviewer</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap');
+    
+    body, html {
+      margin: 0; padding: 0;
+      width: 100%; height: 100%;
+      background-color: #050507;
+      background-image: radial-gradient(circle at 50% 50%, #1a1625 0%, #050507 80%);
+      color: white;
+      font-family: 'Space Grotesk', sans-serif;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .slide {
+      position: absolute;
+      opacity: 0;
+      transform: scale(0.9);
+      transition: all 1.5s cubic-bezier(0.16, 1, 0.3, 1);
+      text-align: center;
+      width: 80%;
+    }
+
+    .active {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    h1 {
+      font-size: 5rem;
+      font-weight: 700;
+      background: linear-gradient(to right, #fff, #8b5cf6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      font-weight: 300;
+      color: #a78bfa;
+    }
+
+    p {
+      font-size: 1.5rem;
+      color: #9ca3af;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .btn {
+      position: absolute;
+      bottom: 50px;
+      padding: 15px 30px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: white;
+      border-radius: 50px;
+      cursor: pointer;
+      font-family: 'Space Grotesk';
+      font-size: 1.2rem;
+      backdrop-filter: blur(10px);
+      transition: all 0.3s;
+    }
+
+    .btn:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: #8b5cf6;
+      box-shadow: 0 0 20px rgba(139, 92, 246, 0.5);
+    }
+
+    .glass-box {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 20px 40px rgba(0,0,0,0.5);
+      backdrop-filter: blur(20px);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Slide 1 -->
+  <div id="slide1" class="slide active">
+    <div class="glass-box">
+      <h1>ONYX</h1>
+      <h2>Architected by Lakshan Muruganandam</h2>
+      <p>An elite, autonomous AI interviewer designed to evaluate FAANG-level engineering talent.</p>
+    </div>
+  </div>
+
+  <!-- Slide 2 -->
+  <div id="slide2" class="slide">
+    <div class="glass-box">
+      <h1>Adaptive State Logic</h1>
+      <h2>Dynamic Evaluation</h2>
+      <p>ONYX doesn't use static scripts. It cross-references resumes with Job Descriptions to generate hyper-specific technical scenarios in real-time.</p>
+    </div>
+  </div>
+
+  <!-- Slide 3 -->
+  <div id="slide3" class="slide">
+    <div class="glass-box">
+      <h1>Invincible Architecture</h1>
+      <h2>100% Enterprise Uptime</h2>
+      <p>Powered by <b>Gemini 2.5 Flash</b>. If the primary API fails, ONYX silently intercepts the error and routes the payload to <b>Meta Llama 3.3 70B</b> via OpenRouter.</p>
+    </div>
+  </div>
+
+  <!-- Slide 4 -->
+  <div id="slide4" class="slide">
+    <div class="glass-box">
+      <h1>Elite Career Coach</h1>
+      <h2>Massive JSON Diagnostics</h2>
+      <p>Post-interview, ONYX generates a complete diagnostic roadmap, providing bullet-by-bullet resume rewrites and pinpointing exact architectural weaknesses.</p>
+    </div>
+  </div>
+
+  <button class="btn" onclick="nextSlide()">Proceed Demo (Click during recording)</button>
+
+  <script>
+    let currentSlide = 1;
+    const totalSlides = 4;
+
+    function nextSlide() {
+      document.getElementById(`slide${currentSlide}`).classList.remove('active');
+      currentSlide++;
+      if(currentSlide > totalSlides) currentSlide = 1;
+      document.getElementById(`slide${currentSlide}`).classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
