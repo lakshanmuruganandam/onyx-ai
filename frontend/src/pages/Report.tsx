@@ -59,7 +59,7 @@ export default function ReportPage() {
       setFinalReport(JSON.parse(cached));
     } else if (histData.length > 0) {
       setIsGenerating(true);
-      fetch('/api/final-report', {
+      fetch('/_/backend/api/final-report', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

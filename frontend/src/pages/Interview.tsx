@@ -258,7 +258,7 @@ export default function InterviewRoom() {
 
     // Generate first question
     try {
-      const res = await fetch('/api/evaluate', {
+      const res = await fetch('/_/backend/api/evaluate', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -338,7 +338,7 @@ export default function InterviewRoom() {
 
     const timeTaken = baseTimeLimit - timeRemaining;
     try {
-      const res = await fetch('/api/evaluate', {
+      const res = await fetch('/_/backend/api/evaluate', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
