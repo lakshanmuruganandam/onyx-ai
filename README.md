@@ -1,39 +1,66 @@
-# ONYX ✦ Adaptive AI Technical Interviewer
+<div align="center">
+  <img src="frontend/public/onyx-logo.png" alt="ONYX Logo" width="120" />
+  <h1>ONYX ✦ Autonomous AI Interviewer</h1>
+  <p><strong>Architected by Lakshan Muruganandam</strong></p>
+  <p>An elite, adaptive AI technical interviewer designed to evaluate FAANG-level engineering talent without bias, complete with enterprise-grade proctoring and career coaching.</p>
+</div>
 
-> **Architected by Lakshan Muruganandam**
-
-ONYX is an elite, autonomous AI technical interviewer designed to rigorously evaluate FAANG-level engineering talent. It moves beyond standard chatbots by utilizing an **Adaptive State Logic Engine** that dynamically adjusts question difficulty based on real-time candidate performance, cross-referenced against their Resume and the specific Job Description.
+<hr/>
 
 ## 🚀 The Core Innovations
 
 ### 1. Invincible Fallback Architecture (100% Uptime Guarantee)
-To ensure absolute reliability in enterprise environments, ONYX is built on a 3-tier cascading AI architecture:
+To ensure absolute reliability in enterprise hackathon environments, ONYX is built on a 3-tier cascading AI architecture:
 *   **Tier 1 (Primary):** Powered by **Google Gemini 2.5 Flash**, delivering sub-second, highly contextual reasoning.
-*   **Tier 2 (Failover):** If the primary API rate-limits or fails, the backend intercepts the `400/500` error and silently reroutes the payload to **Meta Llama 3.3 70B via OpenRouter**.
-*   **Tier 3 (Safety Net):** In the event of a total internet/API blackout, the system drops to a sophisticated mock-state generator, ensuring the frontend UI never crashes during an interview.
+*   **Tier 2 (Failover):** If the primary API rate-limits or fails, the Node.js backend intercepts the `400/500` error and silently reroutes the payload to **Meta Llama 3.3 70B via OpenRouter**.
+*   **Tier 3 (Safety Net):** In the event of a total API blackout, the system drops to a deterministic mock-state generator, ensuring the frontend UI never crashes during a live demo.
 
-### 2. Adaptive State Logic
-ONYX does not ask a static list of questions. 
-*   **The Initialization:** It ingests the candidate's Resume and the target JD to formulate a hyper-specific opening scenario.
-*   **The Evaluation:** Every answer is scored across 5 metrics: *Accuracy, Clarity, Depth, Relevance, and Time Efficiency*.
-*   **The Pivot:** If a candidate demonstrates mastery (Score > 85%), ONYX escalates to "Hard Mode" to test architectural limits. If they struggle, it pivots to fundamentals to establish a baseline.
+### 2. Adaptive State Logic Engine
+ONYX does not ask a static list of questions. It behaves like a Principal Engineer.
+*   **Contextual Initialization:** It ingests the candidate's Resume and the target Job Description (JD) to formulate a hyper-specific opening technical scenario.
+*   **The 5-Axis Evaluation:** Every single answer is scored across 5 deterministic metrics: *Accuracy, Clarity, Depth, Relevance, and Time Efficiency*.
+*   **Dynamic Pivot & The Guillotine:** If a candidate demonstrates mastery (Score > 85%), ONYX escalates to "Hard Mode" to test architectural limits. If accuracy drops too low consecutively, ONYX triggers **Early Termination** to save engineering hours.
 
-### 3. Elite Career Coach Diagnostics
+### 3. Anti-Cheating & Proctoring Suite
+ONYX enforces a strict, zero-trust interview environment:
+*   **Tab Tracking:** Detects document `visibilitychange` and permanently logs if the candidate leaves the interview tab.
+*   **Clipboard Blocking:** Disables `copy`, `paste`, and `cut` events globally.
+*   **Context Menu Locking:** Right-click and native browser shortcuts (Ctrl+C, Cmd+V) are neutralized.
+*   **Live Proctor Flags:** The interviewer UI displays a red badge counting every single integrity violation in real-time. If flags exceed the threshold, the AI autonomously terminates the interview.
+
+### 4. Live Audio/Video & Code Workspace
+*   **WebRTC Integration:** Live mirrored webcam feed with a recording indicator.
+*   **Audio Waveforms:** The AI Interviewer avatar dynamically pulses using 7 independent audio bars when generating voice output.
+*   **Technical Scratchpad:** Candidates are provided an integrated code sandbox to type pseudo-code alongside their spoken answers.
+
+### 5. Elite Career Coach Diagnostics
 When the interview concludes, ONYX drops the "Interviewer" persona and generates a massively detailed JSON payload that acts as a Principal Engineering Career Coach:
-*   **Technical Upgrades:** Pinpoints exact architectural concepts (e.g., *LSM-Trees vs B-Trees, Paxos consensus*) the candidate needs to study.
-*   **Resume Rewrites:** Instructs the candidate exactly how to rewrite their bullet points using the XYZ metric formula to pass ATS systems.
-*   **Action Plan:** Provides a week-by-week study roadmap to guarantee an offer on the next attempt.
+*   **Technical Upgrades:** Pinpoints exact architectural concepts (e.g., *LSM-Trees vs B-Trees, Paxos consensus*) the candidate failed on.
+*   **Resume Rewrites:** Instructs the candidate exactly how to rewrite specific bullet points using the XYZ metric formula to pass ATS systems based on the interview data.
+*   **Action Plan:** Provides a tailored, actionable roadmap to guarantee an offer on the next attempt.
 
-## 🛠️ Tech Stack
-*   **Frontend:** React, Vite, Tailwind CSS, Framer Motion (Glassmorphism "Obsidian & Plasma" UI)
-*   **Backend:** Node.js, Express
-*   **AI Engine:** Google Generative AI SDK (Gemini 2.5 Flash), OpenRouter API (Llama 3.3 70B)
+### 6. "Obsidian & Plasma" Aesthetic
+*   Engineered using React, Vite, and Tailwind CSS.
+*   Features a high-performance **Framer Motion** particle background.
+*   **Glassmorphism Engine:** Translucent cards with `backdrop-blur`, inner shadows, and metallic hover states designed to mimic high-end cybernetic interfaces.
 
-## ⚡ Quick Start
+## 🛠️ Tech Stack & Vercel Monorepo
+*   **Frontend:** React (TypeScript), Vite, Tailwind CSS, Framer Motion, Lucide Icons.
+*   **Backend:** Node.js, Express.js (Deployed seamlessly as Vercel Serverless Functions).
+*   **AI Engine:** Google Generative AI SDK, OpenRouter REST API.
+
+## ⚡ Deployment & Local Setup
+ONYX is configured for seamless monorepo deployment on **Vercel** via a root `vercel.json` file.
+
+### Local Development
 1. Clone the repository.
-2. `cd frontend && npm install && npm run dev`
-3. `cd backend && npm install && node server.js`
-4. Add your `.env` keys (`GEMINI_API_KEY`, `OPENROUTER_API_KEY`) in the backend.
+2. `cd frontend && npm install`
+3. `cd backend && npm install`
+4. Add your `.env` keys in the backend directory.
+5. Run the frontend: `npm run dev`
+6. Run the backend: `node server.js`
 
 ---
-*Built to redefine autonomous technical recruiting.*
+<div align="center">
+  <i>Built to redefine autonomous technical recruiting.</i>
+</div>
