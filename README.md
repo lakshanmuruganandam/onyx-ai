@@ -15,7 +15,9 @@
 ## 🎬 Full Demo Video
 *(Turn on your audio! This video demonstrates the full end-to-end capabilities of the ONYX AI Interviewer)*
 
-<video src="https://github.com/lakshanmuruganandam/onyx-ai/raw/main/FINAL.mp4" controls="controls" muted="false" width="100%"></video>
+https://github.com/lakshanmuruganandam/onyx-ai/raw/main/FINAL.mp4
+
+*(If the video player doesn't load immediately above, [click here to watch the raw video](https://github.com/lakshanmuruganandam/onyx-ai/raw/main/FINAL.mp4))*
 
 <hr/>
 
