@@ -13,9 +13,9 @@
 <hr/>
 
 ## 🎬 Full Demo Video
-*(Paste your YouTube, Loom, or raw video link right here!)*
+*(Turn on your audio! This video demonstrates the full end-to-end capabilities of the ONYX AI Interviewer)*
 
-> **[Watch the full end-to-end demonstration of ONYX AI interviewing a candidate here!](#)**
+<video src="https://github.com/lakshanmuruganandam/onyx-ai/raw/main/FINAL.mp4" controls="controls" muted="false" width="100%"></video>
 
 <hr/>
 
