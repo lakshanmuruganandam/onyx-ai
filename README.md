@@ -21,6 +21,13 @@ https://github.com/lakshanmuruganandam/onyx-ai/raw/main/FINAL.mp4
 
 <hr/>
 
+<div align="center">
+  <h2>🌐 <a href="https://onyx-ai-seven.vercel.app" target="_blank"><strong>THE LIVE WEBSITE IS AVAILABLE TO TRY NOW! CLICK HERE</strong></a> 🌐</h2>
+  <p><em>(Make sure you have your speakers on and microphone ready!)</em></p>
+</div>
+
+<hr/>
+
 ## 🚀 The Core Innovations
 
 ### 1. Invincible Fallback Architecture (100% Uptime Guarantee)
